@@ -1,5 +1,5 @@
 {
-  "name": "dart-board",
+  "name": "@agrc/dart-board",
   "version": "1.0.2",
   "description": "Widgets for using AGRC's geocoding services.",
   "main": "FindAddress.js",
