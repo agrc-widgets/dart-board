@@ -106,7 +106,7 @@ define([
                     });
                 }
 
-                this.mapView.then(() => {
+                this.mapView.when(() => {
                     if (!this.wkid) {
                         this.wkid = (this.mapView) ? this.mapView.spatialReference.wkid : defaultSpatialReference;
                     }

@@ -68,7 +68,7 @@ define(['dijit/_TemplatedMixin', 'dijit/_WidgetBase', 'dojo/dom-class', 'dojo/on
                     });
                 }
 
-                this.mapView.then(function () {
+                this.mapView.when(function () {
                     if (!_this.wkid) {
                         _this.wkid = _this.mapView ? _this.mapView.spatialReference.wkid : defaultSpatialReference;
                     }
