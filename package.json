@@ -28,6 +28,6 @@
     "test": "grunt travis --verbose"
   },
   "dependencies": {
-    "arcgis-js-api": "4.7.2"
+    "arcgis-js-api": "^4.7.x"
   }
 }
