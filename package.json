@@ -24,7 +24,7 @@
   },
   "dojoBuild": "dart-board.profile.js",
   "scripts": {
-    "install": "napa simsalabim/jasmine-favicon-reporter",
+    "prepare": "napa simsalabim/jasmine-favicon-reporter",
     "test": "grunt travis --verbose"
   },
   "dependencies": {
