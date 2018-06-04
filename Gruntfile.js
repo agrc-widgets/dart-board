@@ -58,7 +58,6 @@ module.exports = function (grunt) {
                         'node_modules/jasmine-favicon-reporter/jasmine-favicon-reporter.js',
                         'tests/SetUpTests.js',
                         'node_modules/dojo/dojo.js',
-                        'tests/jsReporterSanitizer.js',
                         'tests/jasmineAMDErrorChecking.js'
                     ],
                     host: 'http://localhost:8000',
