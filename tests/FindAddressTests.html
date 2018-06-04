@@ -8,8 +8,8 @@
         <meta name="keywords" content="agrc.widgets.locate.FindAddress, find address, geocode, utah, tests, test, javascript" />
 
         <!-- CSS -->
-        <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css">
-        <link rel="stylesheet" href="../bower_components/esri/css/main.css">
+        <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+        <link rel="stylesheet" href="../node_modules/esri/css/main.css">
         <style type='text/css'>
             @import '../resources/FindAddress.css';
 
@@ -27,7 +27,7 @@
         </style>
 
         <!-- JAVASCRIPT -->
-        <script type='text/javascript' src='../bower_components/dojo/dojo.js'></script>
+        <script type='text/javascript' src='../node_modules/dojo/dojo.js'></script>
         <script type='text/javascript'>
             var projectUrl = location.pathname.replace(/\/[^\/]+$/, '') + '/';
 
@@ -37,7 +37,7 @@
                     location: projectUrl + '../'
                 }, {
                     name: 'esri',
-                    location: projectUrl + '../bower_components/esri'
+                    location: projectUrl + '../node_modules/esri'
                 }]
             }, [
                 'dart-board/FindAddress',

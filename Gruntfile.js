@@ -3,7 +3,7 @@ module.exports = function (grunt) {
 
     var bumpFiles = [
         'package.json',
-        'bower.json'
+        'package-lock.json'
     ];
     grunt.initConfig({
         babel: {
@@ -54,11 +54,10 @@ module.exports = function (grunt) {
                 options: {
                     specs: ['tests/spec/*.js'],
                     vendor: [
-                        'bower_components/jasmine-favicon-reporter/vendor/favico.js',
-                        'bower_components/jasmine-favicon-reporter/jasmine-favicon-reporter.js',
-                        'bower_components/jasmine-jsreporter/jasmine-jsreporter.js',
+                        'node_modules/jasmine-favicon-reporter/vendor/favico.js',
+                        'node_modules/jasmine-favicon-reporter/jasmine-favicon-reporter.js',
                         'tests/SetUpTests.js',
-                        'bower_components/dojo/dojo.js',
+                        'node_modules/dojo/dojo.js',
                         'tests/jsReporterSanitizer.js',
                         'tests/jasmineAMDErrorChecking.js'
                     ],
@@ -111,9 +110,8 @@ module.exports = function (grunt) {
     ]);
 
     grunt.registerTask('travis', [
-        'eslint'
-        // 'connect'
-        // TODO: run jasmine tests via headless chrome
-        // esri 4.x doesn't support PhantomJS
+        'eslint',
+        'connect',
+        'jasmine'
     ]);
 };
