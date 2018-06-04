@@ -9,7 +9,7 @@
 
         <!-- CSS -->
         <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
-        <link rel="stylesheet" href="../node_modules/esri/css/main.css">
+        <link rel="stylesheet" href="../node_modules/arcgis-js-api/css/main.css">
         <style type='text/css'>
             @import '../resources/FindAddress.css';
 
@@ -36,8 +36,20 @@
                     name: 'dart-board',
                     location: projectUrl + '../'
                 }, {
+                    name: 'maquette',
+                    location: projectUrl + '../node_modules/maquette',
+                    main: 'dist/maquette.umd'
+                }, {
+                    name: 'maquette-jsx',
+                    location: projectUrl + '../node_modules/maquette-jsx',
+                    main: 'dist/maquette-jsx.umd'
+                }, {
+                    name: 'maquette-css-transitions',
+                    location: projectUrl + '../node_modules/maquette-css-transitions',
+                    main: 'dist/maquette-css-transitions.umd'
+                }, {
                     name: 'esri',
-                    location: projectUrl + '../node_modules/esri'
+                    location: projectUrl + '../node_modules/arcgis-js-api'
                 }]
             }, [
                 'dart-board/FindAddress',
