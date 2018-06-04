@@ -164,7 +164,7 @@ require([
                     container: domConstruct.create('div', null, document.body)
                 });
 
-                mapView.then(() => {
+                mapView.when(() => {
                     done();
                 });
             });
@@ -173,7 +173,6 @@ require([
                 // mapView.destroy needs some extra help...
                 // https://thespatialcommunity.slack.com/archives/C0A6GD4T0/p1494006356289273
                 mapView.allLayerViews.destroy();
-                mapView.layerViewManager.empty();
                 mapView.ui.empty();
                 mapView.container.remove();
                 setTimeout(() => {
@@ -256,7 +255,7 @@ require([
                     mapView
                 }).placeAt(win.body());
 
-                mapView.then(() => {
+                mapView.when(() => {
                     expect(widget.wkid).toEqual(3857);
                     done();
                 });

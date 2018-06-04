@@ -8,8 +8,8 @@
         <meta name="keywords" content="agrc.widgets.locate.FindAddress, find address, geocode, utah, tests, test, javascript" />
 
         <!-- CSS -->
-        <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css">
-        <link rel="stylesheet" href="../bower_components/esri/css/main.css">
+        <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+        <link rel="stylesheet" href="../node_modules/arcgis-js-api/css/main.css">
         <style type='text/css'>
             @import '../resources/FindAddress.css';
 
@@ -27,7 +27,7 @@
         </style>
 
         <!-- JAVASCRIPT -->
-        <script type='text/javascript' src='../bower_components/dojo/dojo.js'></script>
+        <script type='text/javascript' src='../node_modules/dojo/dojo.js'></script>
         <script type='text/javascript'>
             var projectUrl = location.pathname.replace(/\/[^\/]+$/, '') + '/';
 
@@ -36,8 +36,20 @@
                     name: 'dart-board',
                     location: projectUrl + '../'
                 }, {
+                    name: 'maquette',
+                    location: projectUrl + '../node_modules/maquette',
+                    main: 'dist/maquette.umd'
+                }, {
+                    name: 'maquette-jsx',
+                    location: projectUrl + '../node_modules/maquette-jsx',
+                    main: 'dist/maquette-jsx.umd'
+                }, {
+                    name: 'maquette-css-transitions',
+                    location: projectUrl + '../node_modules/maquette-css-transitions',
+                    main: 'dist/maquette-css-transitions.umd'
+                }, {
                     name: 'esri',
-                    location: projectUrl + '../bower_components/esri'
+                    location: projectUrl + '../node_modules/arcgis-js-api'
                 }]
             }, [
                 'dart-board/FindAddress',
