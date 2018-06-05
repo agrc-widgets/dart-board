@@ -1,15 +1,18 @@
 language: node_js
 node_js:
-    - "lts/*"
+- lts/*
 before_install:
-    - npm install -g grunt-cli
+- npm install -g grunt-cli
 notifications:
-    email:
-        on_success: change
-        on_failure: change
+  email:
+    on_success: change
+    on_failure: change
 sudo: required
 cache:
-    directories:
-        - node_modules
+  directories:
+  - node_modules
 addons:
-    chrome: stable
+  chrome: stable
+deploy:
+  api_key:
+    secure: mXH82V9HxVcMiDkvmOsUv6jTHKAYHaXURFSDB57tqX1xS4vPCQcqsyBZTtSWEpXXTbNg4BROp/4if1q86Qok5Gye6BrDUBvOTneuBgfEleX5fDNHU1u7OMWpdk6/RtPs99yR/Of00ca/WLNM9pqnaO6FJWY3p82T7SF/z169pushMeLvVSJ25+Vu8ydhddWcFQgcOFir+zrE7ZVM6V1KtUYR1pSD9c6uEDAB4lz0Jy4CDpcTXo5QgVeqriSsOtDzhCv+LCgX96KL2j8rzX5t6dw4yj6xq2CvPwMzuNJWetu4BF3OctsW4lXIhAtviNSgP28griWoOxPPUjJVWhNmZN97j4zuOXdXYLe1TGMU6E2/TNjz21K58rsYB+Vf1NUqmgcEt4+miLybKLcyB6hb8iYIh4i9Qc5QPrmgh/Pu2kj7bc3Pv+gwfXBLCFHtZtQjVxrLwicQFbZZnSaAQ0PLg/Lyx3W1ymVdSUWa3bZ4pUYCg2X2gvaumX78XQZO+kmJ/SYhiTYxjlfL/xWlrZa03hP4pbKNluPC3YK10IqG6VJS878zUS03msSBlkNJKIoCsRbRe/ZABPtNFWRbaZLvDHHhxEDWqtMrlvXAaWxVZaYr8pN0+HQ5bbAKylbxCv8RWgG05sc0oYqIqW0Mep8oCsufQhq1c9PE2NaVPJ0YJiY=
