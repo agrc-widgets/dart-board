@@ -1,3 +1,5 @@
+# NOTE: This repo has been replaced by https://github.com/agrc/kitchen-sink
+
 # dart-board
 
 A javascript widget for using AGRC's geocoding web services.
